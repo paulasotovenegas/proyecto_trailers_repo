@@ -31,7 +31,10 @@
                                     <li><a href="{{route('imprimirBitacora')}}">Generar PDF</a></li>
                                     <li><a href="{{ route('excelBitacora') }}">Generar Excel</a></li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
 
 >>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
                                 </ul>

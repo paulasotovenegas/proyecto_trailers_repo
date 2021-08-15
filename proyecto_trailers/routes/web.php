@@ -166,6 +166,9 @@ Route::get('reportes/bitacora', [HomeController::class, 'reporteBitacora'])->nam
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
+=======
 >>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
 Route::get('reportes/bitacora/Excel', [HomeController::class, 'Excel'])->name('excelBitacora')->middleware('verified','auth');
 
