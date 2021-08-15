@@ -85,7 +85,7 @@
 
                                 <th>Fecha y Hora de Llegada</th>
 
-                                <th>Tiempo de Descarga</th>
+                                <th>Hora de Descarga</th>
                             
                                 <th>Peajes</th>
                                 

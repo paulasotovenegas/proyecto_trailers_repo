@@ -105,6 +105,7 @@
                             </td>
                            
                             <td>
+<<<<<<< HEAD
                             @if($item->id_trailer == null)
                                         <p name="placaEmpleado" class="c_name">{{''}}</p>
                                     @else
@@ -114,6 +115,17 @@
                                 
                                 @endif
                             </td>
+=======
+                                @if($item->id_trailer == null)
+                                            <p name="placaEmpleado" class="c_name">{{''}}</p>
+                                        @else
+                                    
+                                      
+                                        <p name="placaEmpleado" class="c_name">{{$item->trailer->placaTrailer}}</p>
+                                    
+                                    @endif
+                                </td>
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
                           
                         </tr>
                             @endforeach

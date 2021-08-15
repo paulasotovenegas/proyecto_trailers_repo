@@ -33,4 +33,7 @@ class BitacoraExport implements  FromCollection, WithHeadings
         )->get();
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0

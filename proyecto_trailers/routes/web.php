@@ -163,6 +163,10 @@ Route::get('reportes/reporteRutas', [RutaController::class, 'reporteRutas'])->na
 Route::get('reportes/reporteReparaciones', [ReparacionesController::class, 'reporteReparaciones'])->name('reporteReparaciones')->middleware('verified','auth');
 
 Route::get('reportes/bitacora', [HomeController::class, 'reporteBitacora'])->name('reporteBitacora')->middleware('verified','auth');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
 Route::get('reportes/bitacora/Excel', [HomeController::class, 'Excel'])->name('excelBitacora')->middleware('verified','auth');
 
 //Empleados

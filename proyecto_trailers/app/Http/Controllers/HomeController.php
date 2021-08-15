@@ -7,6 +7,10 @@ use App\Models\Bitacora;
 use Barryvdh\DomPDF\Facade as PDF;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Exports\BitacoraExport;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
 class HomeController extends Controller
 {
     /**
@@ -59,6 +63,10 @@ class HomeController extends Controller
             return view('reportes.bitacora', compact('data'));
         }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
 public function Excel()
 {
 
@@ -66,4 +74,8 @@ public function Excel()
 
     return Excel::download(new BitacoraExport, 'Reporte de Bitácora.xlsx');
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0c5c2abd244927e0fd71fb58a7eb35c5592876e0
