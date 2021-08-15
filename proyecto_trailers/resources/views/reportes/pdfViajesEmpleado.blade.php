@@ -154,7 +154,7 @@
 
                                 <th data-breakpoints="xs">Fecha y Hora de Salida</th>
 
-                                <th>Tiempo de Descarga</th>
+                                <th>Hora de Descarga</th>
 
                                 <th>Peajes</th>
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Bitacora;
 use Barryvdh\DomPDF\Facade as PDF;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\BitacoraExport;
 
 class HomeController extends Controller
 {
@@ -57,5 +59,13 @@ class HomeController extends Controller
             $data = Bitacora::whereBetween('fecha', [$fecha1, $fecha2])->paginate(8);
             return view('reportes.bitacora', compact('data'));
         }
+}
+
+public function Excel()
+{
+
+    $data = Bitacora::latest()->get();
+
+    return Excel::download(new BitacoraExport, 'Reporte de Bitácora.xlsx');
 }
 }

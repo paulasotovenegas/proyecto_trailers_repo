@@ -18,7 +18,7 @@ class ViajesExport implements FromCollection, WithHeadings
             'Id Viaje',
             'Fecha y Hora de Salida',
             'Fecha y Hora de Llegada',
-            'Tiempo de Descarga',
+            'Hora de Descarga',
             'Peajes',
             'Diesel',
             'Ganancia Bruta',

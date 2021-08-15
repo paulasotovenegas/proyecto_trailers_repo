@@ -37,6 +37,7 @@
                             <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li><a href="{{route('imprimirBitacora')}}">Generar PDF</a></li>
+                                    <li><a href="{{ route('excelBitacora') }}">Generar Excel</a></li>
 
                                 </ul>
                             </li>

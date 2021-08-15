@@ -164,6 +164,7 @@ Route::get('reportes/reporteReparaciones', [ReparacionesController::class, 'repo
 
 Route::get('reportes/bitacora', [HomeController::class, 'reporteBitacora'])->name('reporteBitacora')->middleware('verified','auth');
 
+Route::get('reportes/bitacora/Excel', [HomeController::class, 'Excel'])->name('excelBitacora')->middleware('verified','auth');
 
 //Empleados
 
