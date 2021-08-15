@@ -26,14 +26,7 @@
                     
                         <h2><strong>Reporte de Viajes</strong> </h2>
                         <br>
-                        <form id="viajes" method="POST" action="{{ route('viajes.fecha') }}">
-                            @csrf
-                            <label style="font-weight: normal;">Desde: <input class="form-control" type="date"
-                                    name="bd_desde" /></label>
-                            <label style="font-weight: normal;">Hasta: <input class="form-control" type="date"
-                                    name="bd_hasta" /></label>
-                            <button type="submit" class="btn-sm btn-primary">Buscar</button>
-                        </form>
+                       
                         <ul class="header-dropdown">
                             <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle"
                                     data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i

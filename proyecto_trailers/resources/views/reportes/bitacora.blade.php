@@ -24,20 +24,12 @@
                     <div class="header">
                         <h2><strong>Bitácora de Acciones</strong> </h2>
                         <br>
-                        <form id="bitacora" method="POST" action="{{ route('bitacora.fecha') }}">
-                            @csrf 
-                         {{--  @method('PUT') --}}
-                            <label style="font-weight: normal;">Desde: <input class="form-control" type="date"
-                                    name="bd_desde" /></label>
-                            <label style="font-weight: normal;">Hasta: <input class="form-control" type="date"
-                                    name="bd_hasta" /></label>
-                            <button type="submit" class="btn-sm btn-primary">Buscar</button>
-                        </form>
+                       
                         <ul class="header-dropdown">
                             <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li><a href="{{route('imprimirBitacora')}}">Generar PDF</a></li>
-
+                                    <li><a href="{{ route('excelBitacora') }}">Generar Excel</a></li>
                                 </ul>
                             </li>
                             <li class="remove">

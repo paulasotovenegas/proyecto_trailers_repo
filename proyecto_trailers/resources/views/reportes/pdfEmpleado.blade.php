@@ -105,7 +105,14 @@
                             </td>
                            
                             <td>
-                              <p class="c_name">{{$item->trailer->placaTrailer}}</p>
+                            @if($item->id_trailer == null)
+                                        <p name="placaEmpleado" class="c_name">{{''}}</p>
+                                    @else
+                                
+                                  
+                                    <p name="placaEmpleado" class="c_name">{{$item->trailer->placaTrailer}}</p>
+                                
+                                @endif
                             </td>
                           
                         </tr>
