@@ -60,7 +60,7 @@ class UsuarioController extends Controller
 
         $email = $request['buscar'];
 
-        $data = User::where('email', 'like', "%$email%")->paginate(8);
+        $data = User::where('email', 'like', "%$email%")->where('id', '!=', auth()->user()->id)->paginate(8);
 
         $data2 = [];
 

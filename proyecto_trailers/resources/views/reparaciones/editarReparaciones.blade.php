@@ -112,8 +112,8 @@
                                     <h2 class="card-inside-title">Costo</h2>
                                     </div>
                                 <div class="input-group">
-                                        <span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
-                                        <input type="number" class="form-control money-dollar" name="costo" value="{{$item->costo}}" placeholder="Costo ,eje:  ₡100.000">
+                                        <span class="input-group-addon"><i>₡</i></span>
+                                        <input type="number" class="form-control  name="costo" value="{{$item->costo}}" placeholder="Costo ,eje:  ₡100.000">
                                         @error('costo')
                                         <div class="alert alert-danger" role="alert">
                                         <strong>{{ $message }}</strong>

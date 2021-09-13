@@ -170,16 +170,21 @@
 
                                         success: function(response) {
 
-                                            var registros = response;
-                                            console.log(registros);
+                                              response = Object.values(response);
 
-                                            for (var i = 0; i < registros.length; i++) {
+                                                
 
-                                                rutas[i] = registros[i].Ruta;
+                                                var registros = response;
 
-                                                cantidad[i] = registros[i].Cantidad;
+                                                rutas = response.map(function(e) {
+                                                    return e.Ruta;
+                                                });
 
-                                            }
+                                                cantidad = response.map(function(e) {
+                                                    return e.Cantidad;
+                                                });
+
+
 
                                             setTimeout(function() {
 

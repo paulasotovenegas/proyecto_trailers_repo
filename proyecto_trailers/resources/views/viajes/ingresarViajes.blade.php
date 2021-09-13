@@ -243,13 +243,13 @@
        var pagoEmpleado = document.getElementById('pagoEmpleado').value;
     
         
-    if(gananciaBruta == 0 || gananciaBruta == null || gananciaBruta == ""){
+    if(gananciaBruta == null || gananciaBruta == ""){
         gananciaNeta="";
-    }else if(diesel == 0 || diesel == null || diesel == ""){
+    }else if(diesel == null || diesel == ""){
         gananciaNeta="";
-    }else if(peajes == 0 || peajes == null || peajes == ""){
+    }else if(peajes == null || peajes == ""){
         gananciaNeta="";
-    }else if(pagoEmpleado == 0 || pagoEmpleado == null || pagoEmpleado == ""){
+    }else if(pagoEmpleado == null || pagoEmpleado == ""){
         gananciaNeta="";
     }else{
         sumas = parseInt(diesel) + parseInt(peajes) + parseInt(pagoEmpleado);
